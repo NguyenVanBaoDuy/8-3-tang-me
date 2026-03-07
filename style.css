@@ -1,0 +1,137 @@
+body{
+
+margin:0;
+font-family:Arial;
+background:linear-gradient(#ffd6e7,#fff);
+text-align:center;
+overflow-x:hidden;
+
+}
+
+.container{
+
+padding:20px;
+max-width:700px;
+margin:auto;
+
+}
+
+.title{
+
+font-size:45px;
+color:#ff0055;
+animation:glow 2s infinite alternate;
+
+}
+
+@keyframes glow{
+
+from{ text-shadow:0 0 10px pink }
+to{ text-shadow:0 0 25px red }
+
+}
+
+.mom{
+
+width:220px;
+max-width:80%;
+border-radius:50%;
+box-shadow:0 0 30px pink;
+margin:20px;
+animation:float 4s infinite;
+
+}
+
+@keyframes float{
+
+0%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0)}
+
+}
+
+.intro{
+
+font-size:20px;
+
+}
+
+.giftBtn{
+
+margin-top:15px;
+padding:14px 30px;
+font-size:20px;
+background:#ff004c;
+color:white;
+border:none;
+border-radius:12px;
+cursor:pointer;
+
+animation:pulse 1.3s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{transform:scale(1)}
+50%{transform:scale(1.1)}
+100%{transform:scale(1)}
+
+}
+
+#wishBox{
+
+margin-top:30px;
+font-size:20px;
+color:#ff1493;
+line-height:1.7;
+
+}
+
+/* hoa */
+
+.flower{
+
+position:fixed;
+top:-20px;
+font-size:20px;
+animation:fall linear infinite;
+
+}
+
+/* tim */
+
+.heart{
+
+position:fixed;
+top:-20px;
+font-size:18px;
+animation:fall linear infinite;
+
+}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-10vh) rotate(0)
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg)
+}
+
+}
+
+/* mobile */
+
+@media (max-width:600px){
+
+.title{
+font-size:32px;
+}
+
+#wishBox{
+font-size:18px;
+}
+
+}
